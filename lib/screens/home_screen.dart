@@ -3,6 +3,7 @@ import 'package:minmalist_tiktok_ui_clone/posts/user_post1.dart';
 import 'package:minmalist_tiktok_ui_clone/posts/user_post2.dart';
 import 'package:minmalist_tiktok_ui_clone/posts/user_post3.dart';
 import 'package:minmalist_tiktok_ui_clone/posts/user_post4.dart';
+import 'package:minmalist_tiktok_ui_clone/posts/user_post5.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -12,7 +13,13 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       body: PageView(
         scrollDirection: Axis.vertical,
-        children: [UserPost1(), UserPost2(), UserPost3(), UserPost4()],
+        children: [
+          UserPost1(),
+          UserPost2(),
+          UserPost3(),
+          UserPost4(),
+          UserPost5(),
+        ],
       ),
     );
   }
